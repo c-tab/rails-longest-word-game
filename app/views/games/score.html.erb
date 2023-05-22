@@ -1,0 +1,9 @@
+<h3>******** Now your results ********</h3>
+<p> Your word: <%= @attempt%> </p>
+<p> <%= @response%> </p>
+<p> <%= @attempt.size%> </p>
+<p> Your score: <%= (10-(Time.now - @start)) + @attempt.size%> </p>
+<p>Good attempt!</p>
+<h3><%= link_to "Play again", new_path%></h3>
+
+<!-- Time doesnt work, also take into account when response is invalid, and styling -->
